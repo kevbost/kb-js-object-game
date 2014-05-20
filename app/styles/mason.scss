@@ -7,8 +7,8 @@ body {
     color: #333;
 }
 
-.container {
-    margin: 0 auto;
+.hero-unit {
+    margin: 50px auto 0 auto;
     width: 300px;
     font-size: 18px;
     font-weight: 200;
@@ -21,6 +21,13 @@ body {
         line-height: 1;
         letter-spacing: -1px;
     }
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
 .button {
@@ -44,12 +51,6 @@ body {
     font-weight: bold;
 }
 
-.green {
-    color: green;
-    font-weight: bold;
-    font-size: 150%;
-}
-
 .battle-menu {
     display: none;
 
@@ -58,32 +59,14 @@ body {
     }
 }
 
-// .battle-menuh1 {
-//     display: none;
-//     &.active {
-//         display:block;
-//         height: 0px;
-//         -webkit-animation-name: weee;
-//         -webkit-animation-duration: 3s;
-//         /*-webkit-animation-timing-function: linear;*/
-//         -webkit-animation-delay: 3s;
-//         -webkit-animation-iteration-count: infinite;
-//         -webkit-animation-direction: forwards;
-//         -webkit-animation-play-state: running;
-//     }
-//     // &.active {
-//     //     display: block;
-//     // }
-// }
-
 .game-over {
     display: none;
     position: absolute;
     top: 0;
     right: 0;
-    bottom: -110px;
+    bottom: 0;
     left: 0;
-    background: yellow;
+    background: brown;
     color: red;
     font-size: 100px;
     text-align: center;
