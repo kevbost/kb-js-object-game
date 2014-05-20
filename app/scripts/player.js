@@ -26,7 +26,7 @@ function Kahless() {
 // /////////  CHANG
 // ////////////////
 function GeneralChang() {
-	this.nameOf = "General Chang"
+	this.nameOf = "General Chang";
 	this.species = "Klingon";
 	this.hp = 100;
 
@@ -50,7 +50,7 @@ function GeneralChang() {
 // ///////////  DAX
 // ////////////////
 function Dax() {
-	this.nameOf = "Curzon Dax"
+	this.nameOf = "Curzon Dax";
 	this.species = "Trill";
 	this.hp = 100;
 
@@ -68,7 +68,7 @@ function Dax() {
 }
 
 function Kirk() {
-	this.nameOf = "James R. Kirk"
+	this.nameOf = "James R. Kirk";
 	this.species = "Human";
 	this.hp = 100;
 
@@ -90,7 +90,7 @@ function Kirk() {
 }
 
 function Janeway() {
-	this.nameOf = "Kathryn Janeway"
+	this.nameOf = "Kathryn Janeway";
 	this.species = "Human";
 	this.hp = 100;
 
@@ -115,8 +115,9 @@ function Janeway() {
 // /////////  MOLOR
 // ////////////////
 function Molor(level) {
+	this.nameOf = "Molor";
 	this.species = "Klingon";
-	this.hp = level * 100;
+	this.hp = 100;
 
 	this.primaryAttack = function(target) {
 		target.hp = target.hp - 2;

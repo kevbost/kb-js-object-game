@@ -3,31 +3,31 @@
 var battle = function() {
   $('.choices').remove();
   $('.battle-menu').addClass('active');
-  $('.battle-menuh1').addClass('active');
+  $('.battle-menu-h1').html(player.nameOf + "<br> Challenges <br>" + enemy.nameOf);
 
   renderPlayerInfo(player);
   renderEnemyInfo(enemy);
-}
+};
 
 var enemyLevel = 1;
 
 $('.choose-Kahless').click(function() {
   player = new Kahless();
-  enemy = new Kirk();
+  enemy = new Molor();
 
   battle();
 });
 
 $('.choose-Chang').click(function() {
   player = new GeneralChang();
-  enemy = new Molor(enemyLevel);
+  enemy = new Kirk(enemyLevel);
 
   battle();
 });
 
 $('.choose-Dax').click(function() {
   player = new Dax();
-  enemy = new Kirk();
+  enemy = new Janeway();
   // enemy = new Molor(enemyLevel);
 
   battle();
@@ -37,7 +37,7 @@ function renderPlayerInfo(player) {
   if (player.hp < 1) {
     showGameOver();
   } else {
-      $('.player-info').html("Player has " + player.hp + "hp");
+      $('.player-info').html(player.nameOf + " has " + player.hp + "hp");
   }
 }
 
@@ -49,7 +49,7 @@ function renderEnemyInfo(enemy) {
 
 
   } else {
-      $('.enemy-info').html("Enemy has " + enemy.hp + "hp");
+      $('.enemy-info').html( enemy.nameOf + " has " + enemy.hp + "hp");
   }
 }
 
@@ -91,11 +91,6 @@ function triggerEnemyAttack() {
   }, 1000);
 }
 
-
-
-var gameOver = _.template($('.gameOverTemplate').text());
-
-$('.game-over').append(gameOverTemplate);
 
 
 // 
